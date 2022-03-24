@@ -1,0 +1,30 @@
+body {
+    background-color: #4B4B4B;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    width: 600px;
+    height: 700px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    width: 40px;
+    height: 40px;
+    color: aliceblue;
+    background-color: grey;
+}
