@@ -8,21 +8,17 @@ const user = {
     age: 29,
     skills: ['PHP', 'JS', 'HTML', 'CSS'],
     experience: 18,
-    progress: '40%'
+    progress: '40%',
+    showExperience () {
+        console.info(this.experience + ' months')
+        console.info(+this.experience / 12 + ' years')
+    }
 }
-
-let experience = function () {
-    console.info(user.experience + ' months')
-    console.info(+user.experience / 12 + ' years')
-}
-
-experience();
 
 user.fullname();
-
-
+user.showExperience();
 class Calculator {
-
+    
         
 }
 
