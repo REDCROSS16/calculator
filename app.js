@@ -22,3 +22,16 @@ class Calculator {
         
 }
 
+
+let result = document.querySelector('.result');
+
+const div = document.createElement('div')
+
+div.classList.add('.keyboard');
+document.querySelector('#calculator').appendChild(div);
+
+// button line 'C CE % / 7 8 9 * 4 5 6 - 1 2 3 + 0 ( ) ='
+
+'C CE % / 7 8 9 * 4 5 6 - 1 2 3 + 0 ( ) ='.split(' ').map( symbol => {
+    div.insertAdjacentHTML('beforeend', `<button value=${symbol}> ${symbol} </button>`)
+})
