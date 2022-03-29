@@ -18,8 +18,22 @@ const user = {
 user.fullname();
 user.showExperience();
 class Calculator {
-    
+    constructor ( currentOperand, previousOperand) {
+        this.currentOperand = currentOperand;
+        this.previousOperand = previousOperand;
+        this.clear();
+    }
         
+    clear() {
+        this.currentOperand = '';
+        this.previousOperand = '';
+        this.operation = undefined;
+    }
+
+    appendNumber (number) {
+        if (number === '.' && this.currentOperand.includes('.')) return;
+        this.currentOperand = this.currentOperand.toString() + number.toString();
+    }
 }
 
 
